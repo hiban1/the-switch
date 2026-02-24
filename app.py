@@ -43,7 +43,11 @@ st.set_page_config(page_title="The Switch", page_icon="🌱")
 st.title("🌱 The Switch")
 st.write("Trouvez l'alternative vegan la plus rentable.")
 
-# --- LA MAGIE EST ICI : LE MENU DÉROULANT AVEC RECHERCHE ---
+# --- 2. L'INTERFACE ---
+
+st.title("🌱 The Switch")
+st.write("Trouvez l'alternative vegan la plus adaptée à vos besoins.")
+
 options_noms = [p['nom'] for p in produits_carnes]
 choix = st.selectbox(
     "Quel produit manges-tu d'habitude ?",
@@ -53,29 +57,44 @@ choix = st.selectbox(
 )
 
 if choix:
-    # 1. Trouver le produit carné choisi
+    # On identifie ce que l'utilisateur a choisi
     cible = next(p for p in produits_carnes if p['nom'] == choix)
     
-    # 2. Trouver la meilleure alternative (même type)
+    # ON PLACE LES BOUTONS ICI
+    priorite = st.radio(
+        "Ta priorité aujourd'hui :",
+        ["💪 Protéines", "💰 Prix", "🏢 Même Enseigne"],
+        horizontal=True
+    )
+    
+    # On cherche les alternatives du même type (Burger ou Nuggets)
     alts = [p for p in alternatives_vegans if p['type'] == cible['type']]
     
     if alts:
-        # Trier par protéines/prix
-        alts.sort(key=lambda x: x['proteines'] / x['prix'], reverse=True)
+        # LOGIQUE DE TRI
+        if priorite == "💪 Protéines":
+            alts.sort(key=lambda x: x['proteines'], reverse=True)
+        elif priorite == "💰 Prix":
+            alts.sort(key=lambda x: x['prix'])
+        elif priorite == "🏢 Même Enseigne":
+            alts.sort(key=lambda x: x['enseigne'] != cible['enseigne'])
+
+        # On prend le premier résultat après le tri
         gagnant = alts[0]
         
         st.divider()
-        st.subheader(f"✅ Ton Switch : {gagnant['nom']}")
+        st.subheader(f"✅ Ton Switch : {gagnant['nom']} ({gagnant['enseigne']})")
         
         col1, col2 = st.columns(2)
         with col1:
-            st.metric("Prix", f"{gagnant['prix']}€", f"{round(gagnant['prix'] - cible['prix'], 2)}€")
+            diff_prix = round(gagnant['prix'] - cible['prix'], 2)
+            st.metric("Prix", f"{gagnant['prix']}€", f"{diff_prix}€", delta_color="inverse")
         with col2:
             diff_prot = gagnant['proteines'] - cible['proteines']
             st.metric("Protéines", f"{gagnant['proteines']}g", f"{diff_prot}g")
             
         if diff_prot < 0:
-            st.info(f"💡 Note : Tu perds {abs(diff_prot)}g de protéines, mais tu sauves la planète !")
+            st.info(f"💡 Note : Tu perds {abs(diff_prot)}g de protéines, mais c'est mieux pour la planète !")
     else:
         st.warning("Aucune alternative trouvée pour ce type de produit.")
 
