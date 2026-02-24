@@ -40,8 +40,6 @@ alternatives_vegans = [
 
 st.set_page_config(page_title="The Switch", page_icon="🌱")
 
-st.title("🌱 The Switch")
-st.write("Trouvez l'alternative vegan la plus rentable.")
 
 # --- 2. L'INTERFACE ---
 
