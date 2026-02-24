@@ -3,19 +3,39 @@ import streamlit as st
 
 # Ta base de données des 12 incontournables
 produits_carnes = [
+# Voici la liste des burgers de Mcdonald's
+    
     {"nom": "Big Mac", "enseigne": "McDonald's", "prix": 5.70, "proteines": 26, "type": "Burger"},
     {"nom": "Double Cheese", "enseigne": "McDonald's", "prix": 4.10, "proteines": 24, "type": "Burger"},
+    {"nom": "Royal Cheese", "enseigne": "McDonald's", "prix": 5.90, "proteines": 25, "type": "Burger"},
+    {"nom": "Royal Bacon", "enseigne": "McDonald's", "prix": 6.10, "proteines": 26, "type": "Burger"},
     {"nom": "McChicken", "enseigne": "McDonald's", "prix": 5.40, "proteines": 20, "type": "Burger"},
     {"nom": "Triple Cheese", "enseigne": "McDonald's", "prix": 6.20, "proteines": 31, "type": "Burger"},
+    {"nom": "Filet-O-Fish", "enseigne": "McDonald's", "prix": 5.20, "proteines": 15, "type": "Burger"},
     {"nom": "280 Original", "enseigne": "McDonald's", "prix": 7.40, "proteines": 34, "type": "Burger"},
-    {"nom": "9 McNuggets", "enseigne": "McDonald's", "prix": 6.90, "proteines": 24, "type": "Nuggets"}
+    {"nom": "9 McNuggets", "enseigne": "McDonald's", "prix": 6.90, "proteines": 24, "type": "Nuggets"},
+    
+# Voici la liste des burgers de Burger King
+    
+    {"nom": "Whopper", "enseigne": "Burger King", "prix": 6.10, "proteines": 27, "type": "Burger"},
+    {"nom": "Double Whopper", "enseigne": "Burger King", "prix": 7.90, "proteines": 44, "type": "Burger"},
+    {"nom": "Steakhouse", "enseigne": "Burger King", "prix": 7.40, "proteines": 31, "type": "Burger"},
+    {"nom": "Big King", "enseigne": "Burger King", "prix": 5.40, "proteines": 19, "type": "Burger"},
+    {"nom": "Double Cheese Bacon XXL", "enseigne": "Burger King", "prix": 8.10, "proteines": 45, "type": "Burger"},
+    {"nom": "Chicken Tendercrisp", "enseigne": "Burger King", "prix": 7.20, "proteines": 23, "type": "Burger"},
+    {"nom": "Crispy Chicken", "enseigne": "Burger King", "prix": 5.20, "proteines": 16, "type": "Burger"},
+    {"nom": "9 King Nuggets", "enseigne": "Burger King", "prix": 6.70, "proteines": 21, "type": "Nuggets"}
 ]
 
 # On ajoute quelques alternatives pour le test
 alternatives_vegans = [
     {"nom": "Veggie McPlant", "enseigne": "McDonald's", "prix": 5.70, "proteines": 19, "type": "Burger"},
     {"nom": "Veggie Whopper", "enseigne": "Burger King", "prix": 6.10, "proteines": 22, "type": "Burger"},
-    {"nom": "Veggie Nuggets (x9)", "enseigne": "McDonald's", "prix": 6.90, "proteines": 15, "type": "Nuggets"}
+    {"nom": "Veggie Nuggets (x9)", "enseigne": "McDonald's", "prix": 6.90, "proteines": 15, "type": "Nuggets"},
+    {"nom": "McVeggie", "enseigne": "McDonald's", "prix": 5.70, "proteines": 14, "type": "Burger"},
+    {"nom": "Veggie Whopper", "enseigne": "Burger King", "prix": 6.10, "proteines": 22, "type": "Burger"},
+    {"nom": "Veggie Steakhouse", "enseigne": "Burger King", "prix": 7.40, "proteines": 25, "type": "Burger"},
+    {"nom": "Veggie Chicken Louisiane", "enseigne": "Burger King", "prix": 7.60, "proteines": 21, "type": "Burger"},
 ]
 
 st.set_page_config(page_title="The Switch", page_icon="🌱")
