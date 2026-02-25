@@ -24,8 +24,24 @@ produits_carnes = [
     {"nom": "Double Cheese Bacon XXL", "enseigne": "Burger King", "prix": 8.10, "proteines": 45, "type": "Burger"},
     {"nom": "Chicken Tendercrisp", "enseigne": "Burger King", "prix": 7.20, "proteines": 23, "type": "Burger"},
     {"nom": "Crispy Chicken", "enseigne": "Burger King", "prix": 5.20, "proteines": 16, "type": "Burger"},
-    {"nom": "9 King Nuggets", "enseigne": "Burger King", "prix": 6.70, "proteines": 21, "type": "Nuggets"}
+    {"nom": "9 King Nuggets", "enseigne": "Burger King", "prix": 6.70, "proteines": 21, "type": "Nuggets"},
+
+# Voici la liste des burgers de KFC
+
+    {"nom": "Tower Original", "enseigne": "KFC", "prix": 7.50, "proteines": 31, "type": "Burger"},
+    {"nom": "Zinger Burger", "enseigne": "KFC", "prix": 6.90, "proteines": 26, "type": "Burger"},
+    {"nom": "Colonel Original", "enseigne": "KFC", "prix": 6.20, "proteines": 24, "type": "Burger"},
+    {"nom": "Boxmaster Original", "enseigne": "KFC", "prix": 8.20, "proteines": 33, "type": "Burger"},
+    {"nom": "Tenders (x6)", "enseigne": "KFC", "prix": 8.90, "proteines": 48, "type": "Nuggets"},
+    {"nom": "Hot Wings (x10)", "enseigne": "KFC", "prix": 9.50, "proteines": 42, "type": "Nuggets"},
+    {"nom": "Bucket 1 personne (Tenders)", "enseigne": "KFC", "prix": 10.50, "proteines": 48, "type": "Nuggets"},
+    {"nom": "Double Stacker Cheese", "enseigne": "KFC", "prix": 8.50, "proteines": 40, "type": "Burger"},
+    {"nom": "Kentucky BBQ Burger", "enseigne": "KFC", "prix": 7.90, "proteines": 28, "type": "Burger"}
+
+    
 ]
+
+
 
 # On ajoute quelques alternatives pour le test
 alternatives_vegans = [
@@ -33,9 +49,18 @@ alternatives_vegans = [
     {"nom": "Veggie Whopper", "enseigne": "Burger King", "prix": 6.10, "proteines": 22, "type": "Burger"},
     {"nom": "Veggie Nuggets (x9)", "enseigne": "McDonald's", "prix": 6.90, "proteines": 15, "type": "Nuggets"},
     {"nom": "McVeggie", "enseigne": "McDonald's", "prix": 5.70, "proteines": 14, "type": "Burger"},
+    
     {"nom": "Veggie Whopper", "enseigne": "Burger King", "prix": 6.10, "proteines": 22, "type": "Burger"},
     {"nom": "Veggie Steakhouse", "enseigne": "Burger King", "prix": 7.40, "proteines": 25, "type": "Burger"},
     {"nom": "Veggie Chicken Louisiane", "enseigne": "Burger King", "prix": 7.60, "proteines": 21, "type": "Burger"},
+    
+    {"nom": "Colonel Veggie", "enseigne": "KFC", "prix": 6.20, "proteines": 18, "type": "Burger"},
+    {"nom": "Boxmaster Veggie", "enseigne": "KFC", "prix": 8.20, "proteines": 22, "type": "Burger"},
+    {"nom": "Tower Veggie", "enseigne": "KFC", "prix": 7.50, "proteines": 20, "type": "Burger"},
+    {"nom": "Tenders Veggie (x6)", "enseigne": "KFC", "prix": 8.90, "proteines": 21, "type": "Nuggets"}
+
+
+    
 ]
 
 st.set_page_config(page_title="The Switch", page_icon="🌱")
