@@ -22,7 +22,7 @@ produits_carnes = [
     {"nom": "Steakhouse", "enseigne": "Burger King", "prix": 7.40, "proteines": 31, "type": "Burger"},
     {"nom": "Big King", "enseigne": "Burger King", "prix": 5.40, "proteines": 19, "type": "Burger"},
     {"nom": "Double Cheese Bacon XXL", "enseigne": "Burger King", "prix": 8.10, "proteines": 45, "type": "Burger"},
-    {"nom": "Chicken Tendercrisp", "enseigne": "Burger King", "prix": 7.20, "proteines": 23, "type": "Burger"},
+    {"nom": "Chicken Louisiane Steakhouse", "enseigne": "Burger King", "prix": 7.20, "proteines": 23, "type": "Burger"},
     {"nom": "Crispy Chicken", "enseigne": "Burger King", "prix": 5.20, "proteines": 16, "type": "Burger"},
     {"nom": "9 King Nuggets", "enseigne": "Burger King", "prix": 6.70, "proteines": 21, "type": "Nuggets"},
 
