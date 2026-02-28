@@ -43,7 +43,7 @@ produits_carnes = [
 
 # On ajoute quelques alternatives pour le test
 alternatives_vegans = [
-    {"nom": "Veggie Nuggets (x9)", "enseigne": "McDonald's", "prix": 7,50, "proteines": 15, "type": "Nuggets"},
+    {"nom": "Veggie Nuggets (x9)", "enseigne": "McDonald's", "prix": 7.50, "proteines": 15, "type": "Nuggets"},
     {"nom": "McVeggie", "enseigne": "McDonald's", "prix": 5.70, "proteines": 14, "type": "Burger"},
     
     {"nom": "Veggie Whopper", "enseigne": "Burger King", "prix": 6.65, "proteines": 22, "type": "Burger"},
