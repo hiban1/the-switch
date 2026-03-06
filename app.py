@@ -127,7 +127,5 @@ st.sidebar.write("Compare aussi le **Fer**, la **B12** et les **Oméga-3**.")
 st.sidebar.link_button("S'inscrire à la liste d'attente", "https://docs.google.com/forms/d/e/1FAIpQLSdfcfRgc_N1lthe5yvm91dDLScVvAk1WFX0vHRvCwiQkCvljw/viewform?usp=publish-editor")
 
 st.sidebar.caption("🎁 -50% pour les premiers inscrits")
-            st.sidebar.success("Check tes mails bientôt ! 💪")
-        else:
-            st.sidebar.warning("Indique ton mail pour valider.")
+
 
