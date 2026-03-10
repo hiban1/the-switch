@@ -118,14 +118,17 @@ if choix:
         st.warning("Aucune alternative trouvée pour ce type de produit.")
 
 
-# --- SECTION EXPERT (SIDEBAR) ---
-st.sidebar.markdown("---") 
-st.sidebar.header("🚀 Mode Expert Santé")
-st.sidebar.write("Compare aussi le **Fer**, la **B12** et les **Oméga-3**.")
+# --- SECTION EXPERT (PAGE PRINCIPALE) ---
+st.write("---") 
+st.header("🚀 Mode Expert Santé")
+st.write("Tu veux aller plus loin ? On prépare un comparateur complet incluant le **Fer**, la **B12** et les **Oméga-3**.")
 
-# Ce bouton ouvre directement ton Google Form dans un nouvel onglet
-st.sidebar.link_button("S'inscrire à la liste d'attente", "https://docs.google.com/forms/d/e/1FAIpQLSdfcfRgc_N1lthe5yvm91dDLScVvAk1WFX0vHRvCwiQkCvljw/viewform?usp=publish-editor")
+# Un bandeau vert pour la promo
+st.success("🎁 **PROMO : -50% sur le Mode Expert pour les premiers inscrits !**")
 
-st.sidebar.success("🎁 -50% pour les premiers inscrits")
+# Le bouton bien large et visible
+st.link_button("🔥 M'inscrire à la liste d'attente", "https://docs.google.com/forms/d/e/1FAIpQLSdfcfRgc_N1lthe5yvm91dDLScVvAk1WFX0vHRvCwiQkCvljw/viewform?usp=sf_link", use_container_width=True)
+
+st.caption("Rejoins les 50+ personnes déjà inscrites pour booster leur santé. 🌿")
 
 
