@@ -130,6 +130,6 @@ st.link_button("🚀 Devenir Bêta-Testeur (Accès Privé)",
 
 # La promo devient une récompense pour l'aide apportée
 st.info("🎁 **Récompense :** Les bêta-testeurs bénéficient de -50% à vie sur la version finale.")
-st.caption("Rejoignez les 50+ passionnés qui nous aident à optimiser la nutrition végétale. 🌿")caption("Rejoins les 50+ personnes déjà inscrites pour booster leur santé. 🌿")
+st.caption("Rejoignez les 50+ passionnés qui nous aident à optimiser la nutrition végétale. 🌿")
 
 
