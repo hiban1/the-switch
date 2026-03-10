@@ -118,17 +118,18 @@ if choix:
         st.warning("Aucune alternative trouvée pour ce type de produit.")
 
 
-# --- SECTION EXPERT (PAGE PRINCIPALE) ---
+# --- SECTION VALIDATION MVP (PAGE PRINCIPALE) ---
 st.write("---") 
-st.header("🚀 Mode Expert Santé")
-st.write("Tu veux aller plus loin ? On prépare un comparateur complet incluant le **Fer**, la **B12** et les **Oméga-3**.")
+st.header("🧪 Mode Expert : Ne sacrifiez plus votre santé")
+st.write("Vous vous sentez fatigué(e) ? On développe l'outil qui calcule vos apports en **Fer**, **B12** et **Oméga-3** pour chaque burger.")
 
-# Un bandeau vert pour la promo
-st.success("🎁 **PROMO : -50% sur le Mode Expert pour les premiers inscrits !**")
+# Le bouton change de promesse : on devient acteur du projet
+st.link_button("🚀 Devenir Bêta-Testeur (Accès Privé)", 
+               "https://docs.google.com/forms/d/e/1FAIpQLSdfcfRgc_N1lthe5yvm91dDLScVvAk1WFX0vHRvCwiQkCvljw/viewform?usp=sf_link", 
+               use_container_width=True)
 
-# Le bouton bien large et visible
-st.link_button("🔥 M'inscrire à la liste d'attente", "https://docs.google.com/forms/d/e/1FAIpQLSdfcfRgc_N1lthe5yvm91dDLScVvAk1WFX0vHRvCwiQkCvljw/viewform?usp=sf_link", use_container_width=True)
-
-st.caption("Rejoins les 50+ personnes déjà inscrites pour booster leur santé. 🌿")
+# La promo devient une récompense pour l'aide apportée
+st.info("🎁 **Récompense :** Les bêta-testeurs bénéficient de -50% à vie sur la version finale.")
+st.caption("Rejoignez les 50+ passionnés qui nous aident à optimiser la nutrition végétale. 🌿")caption("Rejoins les 50+ personnes déjà inscrites pour booster leur santé. 🌿")
 
 
