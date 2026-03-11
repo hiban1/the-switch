@@ -5,25 +5,25 @@ import streamlit as st
 produits_carnes = [
 # Voici la liste des burgers de Mcdonald's
     
-    {"nom": "Big Mac", "enseigne": "McDonald's", "prix": 6.53, "proteines": 26, "type": "Burger"},
-    {"nom": "Double Cheese", "enseigne": "McDonald's", "prix": 5.70, "proteines": 24, "type": "Burger"},
-    {"nom": "Royal Cheese", "enseigne": "McDonald's", "prix": 7.30, "proteines": 25, "type": "Burger"},
-    {"nom": "Royal Bacon", "enseigne": "McDonald's", "prix": 7.23, "proteines": 26, "type": "Burger"},
-    {"nom": "McChicken", "enseigne": "McDonald's", "prix": 5.70, "proteines": 20, "type": "Burger"},
+    {"nom": "Big Mac", "enseigne": "McDonald's", "prix": 6.53, "proteines": 27, "type": "Burger"},
+    {"nom": "Double Cheese", "enseigne": "McDonald's", "prix": 5.70, "proteines": 27, "type": "Burger"},
+    {"nom": "Royal Cheese", "enseigne": "McDonald's", "prix": 7.30, "proteines": 31, "type": "Burger"},
+    {"nom": "Royal Bacon", "enseigne": "McDonald's", "prix": 7.23, "proteines": 30, "type": "Burger"},
+    {"nom": "McChicken", "enseigne": "McDonald's", "prix": 5.70, "proteines": 19, "type": "Burger"},
     {"nom": "Filet-O-Fish", "enseigne": "McDonald's", "prix": 5.70, "proteines": 15, "type": "Burger"},
-    {"nom": "280 Original", "enseigne": "McDonald's", "prix": 8.30, "proteines": 34, "type": "Burger"},
-    {"nom": "9 McNuggets", "enseigne": "McDonald's", "prix": 7.50, "proteines": 24, "type": "Nuggets"},
+    {"nom": "280 Original", "enseigne": "McDonald's", "prix": 8.30, "proteines": 44, "type": "Burger"},
+    {"nom": "9 McNuggets", "enseigne": "McDonald's", "prix": 7.50, "proteines": 23, "type": "Nuggets"},
     
 # Voici la liste des burgers de Burger King
     
-    {"nom": "Whopper", "enseigne": "Burger King", "prix": 6.65, "proteines": 27, "type": "Burger"},
-    {"nom": "Double Whoppe Cheese", "enseigne": "Burger King", "prix": 9.06, "proteines": 44, "type": "Burger"},
-    {"nom": "Steakhouse", "enseigne": "Burger King", "prix": 7.26, "proteines": 31, "type": "Burger"},
-    {"nom": "Big King", "enseigne": "Burger King", "prix": 5.76, "proteines": 19, "type": "Burger"},
-    {"nom": "Double Cheese Bacon XXL", "enseigne": "Burger King", "prix": 9.40, "proteines": 45, "type": "Burger"},
-    {"nom": "Chicken Louisiane Steakhouse", "enseigne": "Burger King", "prix": 7.55, "proteines": 23, "type": "Burger"},
-    {"nom": "Crispy Chicken Cheese", "enseigne": "Burger King", "prix": 5.71, "proteines": 16, "type": "Burger"},
-    {"nom": "10 King Nuggets", "enseigne": "Burger King", "prix": 6.46, "proteines": 21, "type": "Nuggets"},
+    {"nom": "Whopper", "enseigne": "Burger King", "prix": 6.65, "proteines": 28, "type": "Burger"},
+    {"nom": "Double Whoppe Cheese", "enseigne": "Burger King", "prix": 9.06, "proteines": 52, "type": "Burger"},
+    {"nom": "Steakhouse", "enseigne": "Burger King", "prix": 7.26, "proteines": 37, "type": "Burger"},
+    {"nom": "Big King", "enseigne": "Burger King", "prix": 5.76, "proteines": 27, "type": "Burger"},
+    {"nom": "Double Cheese Bacon XXL", "enseigne": "Burger King", "prix": 9.40, "proteines": 60, "type": "Burger"},
+    {"nom": "Chicken Louisiane Steakhouse", "enseigne": "Burger King", "prix": 7.55, "proteines": 38, "type": "Burger"},
+    {"nom": "Crispy Chicken Cheese", "enseigne": "Burger King", "prix": 5.71, "proteines": 19, "type": "Burger"},
+    {"nom": "10 King Nuggets", "enseigne": "Burger King", "prix": 6.46, "proteines": 24, "type": "Nuggets"},
 
 # Voici la liste des burgers de KFC
 
@@ -43,12 +43,12 @@ produits_carnes = [
 
 # On ajoute quelques alternatives pour le test
 alternatives_vegans = [
-    {"nom": "Veggie Nuggets (x9)", "enseigne": "McDonald's", "prix": 7.50, "proteines": 15, "type": "Nuggets"},
-    {"nom": "McVeggie", "enseigne": "McDonald's", "prix": 5.70, "proteines": 14, "type": "Burger"},
+    {"nom": "Veggie Nuggets (x9)", "enseigne": "McDonald's", "prix": 7.50, "proteines": 23, "type": "Nuggets"},
+    {"nom": "McVeggie", "enseigne": "McDonald's", "prix": 5.70, "proteines": 17, "type": "Burger"},
     
-    {"nom": "Veggie Whopper", "enseigne": "Burger King", "prix": 6.65, "proteines": 22, "type": "Burger"},
-    {"nom": "Veggie Steakhouse", "enseigne": "Burger King", "prix": 7.36, "proteines": 25, "type": "Burger"},
-    {"nom": "Veggie Chicken Louisiane", "enseigne": "Burger King", "prix": 7.55, "proteines": 21, "type": "Burger"},
+    {"nom": "Veggie Whopper", "enseigne": "Burger King", "prix": 6.65, "proteines": 27, "type": "Burger"},
+    {"nom": "Veggie Steakhouse", "enseigne": "Burger King", "prix": 7.36, "proteines": 33, "type": "Burger"},
+    {"nom": "Veggie Chicken Louisiane", "enseigne": "Burger King", "prix": 7.55, "proteines": 24, "type": "Burger"},
     
     {"nom": "Colonel Original Veggie", "enseigne": "KFC", "prix": 7.23, "proteines": 18, "type": "Burger"},
     {"nom": "Boxmaster Veggie", "enseigne": "KFC", "prix": 8.23, "proteines": 22, "type": "Burger"},
