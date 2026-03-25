@@ -65,7 +65,7 @@ st.set_page_config(page_title="The Switch", page_icon="🌱")
 # --- 2. L'INTERFACE ---
 
 st.title("🌱 The Switch")
-st.write("Trouvez l'alternative vegan la plus adaptée à vos besoins.")
+st.write("Trouvez l'alternative vegétarienne la plus adaptée à vos besoins.")
 
 options_noms = [p['nom'] for p in produits_carnes]
 choix = st.selectbox(
